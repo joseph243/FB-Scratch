@@ -58,6 +58,14 @@ public class UseArray {
 		names = moreNames;
 		System.out.println(Arrays.toString(names));
 		System.out.println(Arrays.toString(moreNames));
+
+		System.out.println("=================================");
+		
+		int theMonth = 3;
+		System.out.println("Month index " + theMonth + 
+				" is called " + monthNames[theMonth] +
+				" and has " + daysInMonth[theMonth] +
+				" days");
 	}
 
 }

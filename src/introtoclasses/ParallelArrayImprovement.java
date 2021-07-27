@@ -1,5 +1,8 @@
 package introtoclasses;
 
+import java.util.ArrayList;
+import java.util.List;
+
 class MonthNameWithDayCount {
 	String name;
 	int dayCount;
@@ -24,6 +27,20 @@ public class ParallelArrayImprovement {
 		MonthNameWithDayCount jan = new MonthNameWithDayCount("January", 31);
 		System.out.println("month name is " + jan.name);
 
+		// an array of month name with day count =  { new Month....Count("", 31), new Month....Count("", 31), }
+	
+		List<MonthNameWithDayCount> theList = new ArrayList<>();
+//		MonthNameWithDayCount feb = new MonthNameWithDayCount("February", 28);
+//		theList.add(feb);
+		
+		theList.add(new MonthNameWithDayCount("February", 28));
+		
+		MonthNameWithDayCount mnwdc = theList.get(0);
+//		mnwdc.name
+		
+		MonthNameWithDayCount janAgain = new MonthNameWithDayCount("January", 31);
+		
+	
 	}
 
 }
